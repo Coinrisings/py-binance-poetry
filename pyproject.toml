@@ -1,0 +1,23 @@
+[project]
+name = "binance"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Kim",email = "706361560@qq.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "six (>=1.17.0,<2.0.0)",
+    "dateparser (>=1.2.1,<2.0.0)",
+    "aiohttp (>=3.11.18,<4.0.0)",
+    "ujson (>=5.10.0,<6.0.0)",
+    "pycryptodome (>=3.22.0,<4.0.0)",
+    "websockets (>=15.0.1,<16.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
