@@ -370,7 +370,7 @@ class PortfolioClient(BaseClient):
         return session
 
     def _request(self, method, uri: str, signed: bool, force_params: bool = False, **kwargs):
-        print('request:', uri, kwargs)
+        # print('request:', uri, kwargs)
         kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
         self.response = getattr(self.session, method)(uri, **kwargs)
         return self._handle_response(self.response)
